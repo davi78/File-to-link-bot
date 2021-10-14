@@ -61,7 +61,7 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("Tunggu sebentar,,,")
+        temp_msg = await message.reply("Tunggu sebentar...")
         try:
             messages = await get_messages(client, ids)
         except:
@@ -94,6 +94,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
+                    InlineKeyboardButton("Chat Sex 🔞", url = "t.me/chatsangek_bot"),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
@@ -117,7 +118,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Bergabung sekarang 🔥",
+                "Bergabung sekarang",
                 url = client.invitelink)
         ]
     ]
@@ -156,7 +157,7 @@ async def subscribers_count(bot, m: Message):
     active = messages[0]
     blocked = messages[1]
     await m.delete()
-    await msg.edit("USERS_LIST {} {}".format(active, blocked))
+    await msg.edit("Statistics bot saat ini\n\nPengguna aktif : <code>{}</code>\nBlocked Users : <code>{}</code>".format(active, blocked))
 
 
 @Bot.on_message(filters.private & filters.command('broadcast') & filters.user(ADMINS))
