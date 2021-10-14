@@ -14,11 +14,11 @@
     &nbsp;<img src="https://img.shields.io/badge/Code%20%F0%9D%95%8F%20Botz-Group-blue?style=flat-square&logo=telegram" width="130" height="18">&nbsp;
   </a>
   <br>
-  <a href="https://github.com/CodeXBotz/File-Sharing-Bot/stargazers">
-    <img src="https://img.shields.io/github/stars/CodeXBotz/File-Sharing-Bot?style=social">
+  <a href="https://github.com/davi78/File-to-link-bot/stargazers">
+    <img src="https://img.shields.io/github/stars/davi78/File-to-link-bot?style=social">
   </a>
-  <a href="https://github.com/CodeXBotz/File-Sharing-Bot/fork">
-    <img src="https://img.shields.io/github/forks/CodeXBotz/File-Sharing-Bot?label=Fork&style=social">
+  <a href="https://github.com/davi78/File-to-link-bot/fork">
+    <img src="https://img.shields.io/github/forks/davi78/File-to-link-bot?label=Fork&style=social">
   </a>  
 </p>
 
@@ -44,7 +44,7 @@ I Guess This Will Be Usefull For Many People.....😇.
 ##
 ### Installation
 #### Deploy on Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/CodeXBotz/File-Sharing-Bot)</br>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/davi78/File-to-link-bot)</br>
 <a href="https://youtu.be/LCrkRTMkmzE">
   <img src="https://img.shields.io/badge/How%20to-Deploy-red?logo=youtube" width="147">
 </a><br>
@@ -53,8 +53,8 @@ I Guess This Will Be Usefull For Many People.....😇.
 
 #### Deploy in your VPS
 ````bash
-git clone https://github.com/CodeXBotz/File-Sharing-Bot
-cd File-Sharing-Bot
+git clone https://github.com/davi78/File-to-link-bot
+cd File-to-link-bot
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
 python3 main.py
@@ -63,28 +63,28 @@ python3 main.py
 ### Admin Commands
 
 ```
-/start - start the bot or get posts
+/start - Perintah start
 
-/batch - create link for more than one posts
+/batch - Perintah untuk membuat lebih dari satu postingan
 
-/genlink - create link for one post
+/genlink - Perintah untuk membuat satu postingan
 
-/users - view bot statistics
+/users - Perintah untuk melihat statistik bot
 
-/broadcast - broadcast any messages to bot users
+/broadcast - Perintah broadcast ke semua users
 ```
 
 ### Variables
 
-* `API_HASH` Your API Hash from my.telegram.org
-* `API_ID` Your API ID from my.telegram.org
-* `TG_BOT_TOKEN` Your bot token from @BotFather
-* `OWNER_ID` Must enter Your Telegram Id
-* `CHANNEL_ID` Your Channel ID eg:- -100xxxxxxxx
-* `ADMINS` Optional: A space separated list of user_ids of Admins, they can only create links
-* `START_MESSAGE` Optional: start message of bot, use HTML and <a href='https://github.com/codexbotz/File-Sharing-Bot/blob/main/README.md#start_message'>fillings</a>
-* `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
-* `FORCE_SUB_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
+* `API_HASH` Dapatkan API_HASH dari from my.telegram.org
+* `API_ID` Dapatkan API_ID dari my.telegram.org
+* `TG_BOT_TOKEN` Dapatkan Token bot dari @BotFather
+* `OWNER_ID` Masukkan ID telegram OWNER
+* `CHANNEL_ID` Channel ID kamu eg:- -100xxxxxxxx
+* `ADMINS` ID admin
+* `START_MESSAGE` Pesan start 
+* `FORCE_SUB_MESSAGE` Force subs pesan 
+* `FORCE_SUB_CHANNEL` Force subs 
 
 ### Extra Variables
 
